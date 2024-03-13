@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/icon.jpg" type="image/x-icon">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <main>
+            <h2>Temperature Converter</h2>
+
+            <label for="temperature">Enter Temperature:</label>
+            <input type="text" id="temperature" placeholder="Enter temperature" oninput="validateInput()">
+
+            <label for="fromUnit">Convert from:</label>
+            <select id="fromUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="toUnit">Convert to:</label>
+            <select id="toUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button onclick="convertTemperature()">Convert</button>
+
+            <div id="result"></div>
+        </main>
+
+        <footer>
+            &copy; 2024 Temperature Converter
+        </footer>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
